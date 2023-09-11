@@ -6,6 +6,18 @@
     font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
 }
-body{
+.container {
+    width: 100%;
+    min-height: 100vh;
     background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .calc {
+    width: 400px;
+    background-color: #afbfcf;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
