@@ -16,35 +16,35 @@
     <div class="container">
       <div class="calc">
         <form>
-          <input type="text" name="display">
+          <input type="text" name="display" class="input-value">
           <div>
-            <button type="button" class="Clear-all">AC</button>
-            <button type="button" class="Del">DE</button>
-            <button type="button" class="dot">.</button>
-            <button type="button" class="slash">/</button>
+            <input type="button" class="input-button operator" value="AC" onclick="display.value = '' "></input>
+            <input type="button" class="input-button operator" value="DE" onclick="display.value = display.value.toString().slice(0, -1) "></input>
+            <input type="button" class="input-button operator" value="." onclick="display.value += '.'"></input>
+            <input type="button" class="input-button operator" value="/" onclick="display.value += '/'"></input>
           </div>
           <div>
-            <button type="button" class="7">7</button>
-            <button type="button" class="8">8</button>
-            <button type="button" class="9">9</button>
-            <button type="button" class="*">*</button>
+            <input type="button" class="input-button" value="7" onclick="display.value += '7' "></input>
+            <input type="button" class="input-button" value="8" onclick="display.value += '8' "></input>
+            <input type="button" class="input-button" value="9" onclick="display.value += '9' "></input>
+            <input type="button" class="input-button operator" value="*" onclick="display.value += '*' "></input>
           </div>
           <div>
-            <button type="button" class="4">4</button>
-            <button type="button" class="5">5</button>
-            <button type="button" class="6">6</button>
-            <button type="button" class="dash">-</button>
+            <input type="button" class="input-button" value="4" onclick="display.value += '4' "></input>
+            <input type="button" class="input-button" value="5" onclick="display.value += '5' "></input>
+            <input type="button" class="input-button" value="6" onclick="display.value += '6' "></input>
+            <input type="button" class="input-button operator" value="-" onclick="display.value += '-' "></input>
           </div>
           <div>
-            <button type="button" class="1">1</button>
-            <button type="button" class="2">2</button>
-            <button type="button" class="3">3</button>
-            <button type="button" class="plus">+</button>
+            <input type="button" class="input-button" value="1" onclick="display.value += '1' "></input>
+            <input type="button" class="input-button" value="2" onclick="display.value += '2' "></input>
+            <input type="button" class="input-button" value="3" onclick="display.value += '3' "></input>
+            <input type="button" class="input-button operator" value="+" onclick="display.value += '+' "></input>
           </div>
           <div>
-            <button type="button" class="dobule-zero">00</button>
-            <button type="button" class="0">0</button>
-            <button type="button" class="equal">=</button>
+            <input type="button" class="input-button" value="00" onclick="display.value += '00' "></input>
+            <input type="button" class="input-button" value="0" onclick="display.value += '0' "></input>
+            <input type="button" class="input-button equal operator" value="=" onclick="display.value = eval(display.value) "></input>
           </div>
         </form>
       </div>
