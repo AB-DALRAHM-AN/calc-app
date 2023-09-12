@@ -96,10 +96,10 @@ body {
   .container .calc form .input-button {
     font-size: 10px;
     margin: 8px;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
   .container .calc form .equal {
-    width: 85px;
+    width: 100px;
   }
 }
