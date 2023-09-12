@@ -68,6 +68,7 @@
   color: #33ffd8;
 }
 
+/* media query for mobile devices */
 @media (max-width: 420px) {
   .container .calc {
     padding: 10px;
@@ -84,7 +85,6 @@
     width: 115px;
   }
 }
-
 @media (max-width: 340px) {
   .container .calc form .input-value {
     font-size: 15px;
