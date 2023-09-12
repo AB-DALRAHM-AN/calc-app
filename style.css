@@ -6,6 +6,9 @@
   font-family: "Rubik", sans-serif;
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+}
 .container {
   width: 100%;
   min-height: 100vh;
